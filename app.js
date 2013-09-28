@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	$('.delete_item').hide();
 /* Adding Items */
     $('input#add').keydown(function(event){
         if(event.keyCode==13){
@@ -30,15 +30,26 @@ $(document).ready(function() {
 /*Checkbox Strikethrough Item Text */
 	$('input.check').change(function(){
 		$(this).siblings('.item').toggleClass('strike');
+		// $('.delete_item').show();
+		$('.delete_item').css('display', 'block');
 	});
 
-/* Removing Checked Items */
-	$('form#remove-item').submit(function(event){
-		event.preventDefault();
-		$('ul#item_list li').each(function(){
+// Remove list item when button is clicked
+	$('.delete_item').on('click', function(){
+			$('ul#item_list li').each(function(){
 			if($(this).find('.item').hasClass('strike')){
 				$(this).remove();
 			}
 		});
 	});
+
+/* Removing Checked Items */
+	// $('form#remove-item').submit(function(event){
+	// 	event.preventDefault();
+	// 	$('ul#item_list li').each(function(){
+	// 		if($(this).find('.item').hasClass('strike')){
+	// 			$(this).remove();
+	// 		}
+	// 	});
+	// });
 });
