@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$('.delete_item').hide();
 /* Adding Items */
     $('input#add').keydown(function(event){
         if(event.keyCode==13){
@@ -27,12 +26,10 @@ $(document).ready(function() {
 			}
 	});
 
-/*Checkbox Strikethrough Item Text */
-	$('input.check').change(function(){
-		$(this).siblings('.item').toggleClass('strike');
-		// $('.delete_item').show();
-		$('.delete_item').css('display', 'block');
-	});
+	$('input.check').change(function () {
+    $(this).siblings('.item').toggleClass('strike', this.checked);
+    $(this).closest('li').find('.delete_item').toggleClass('hidden', !this.checked);
+});
 
 // Remove list item when button is clicked
 	$('.delete_item').on('click', function(){

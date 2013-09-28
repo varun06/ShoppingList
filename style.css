@@ -52,21 +52,15 @@ table {
 html, body {
 	background-color :#f5f5f5;
   padding: 20px 50px;
+  background: url('images/groceries.jpg') repeat;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h4 {
+h1 {
+  margin: 0 20%;
   color: #cd0000;
   font-size: 42px;
   letter-spacing: -2px;
-  text-align: left;
+  text-align: center;
 }
 
 #container {
@@ -81,13 +75,13 @@ h4 {
 input[type="text"] {
     width: 70%;
     height: 25px;
-    margin: 10px auto;
+    margin: 25px auto;
     padding-right: 50px;
 }
 
 input[type="button"] {
     margin-left: -55px;
-    height: 31px;
+    height: 30px;
     width: 50px;
     background: blue;
     color: white;
@@ -97,6 +91,7 @@ input[type="button"] {
 
 .shopList-form {
 	margin: 20px 0 5px 0;
+	height: 80px;
 	font-size: 13px;
 }
 
@@ -156,7 +151,7 @@ input[type="button"] {
   width: 2px;
   position: absolute;
   height: 100%;
-  left: 35px;
+  left: 55px;
 
 }
 
@@ -166,12 +161,12 @@ input[type="button"] {
 
 .check, .item {
   float: left;
-  margin-left: -40px;
+  margin-left: -30px;
 }
 
 .item {
 	font-size: 15px;
-	margin: 5px 5px 0 -2px;
+	margin: 8px 0 0 20px;
 	word-wrap: break-word;
 }
 
