@@ -38,8 +38,8 @@ $(document).ready(function() {
 		$('.delete_item').on('click', function(){
 			$('ul#item_list li').each(function(){
 				if($(this).find('.item').hasClass('strike')){
-					$(this).remove();
-					// $(this).fadeOut(300);
+					// $(this).remove();
+					$(this).fadeOut(300);
 				}
 			});
 		});
