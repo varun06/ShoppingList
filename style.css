@@ -48,19 +48,22 @@ table {
 }
 
 /*---------------------- My Style ----------------------*/
+body {
+    background: url('./images/groceries.jpg');
+    background-size: 1440px 800px;
+    padding: 20px 30px;
+}
 
-html, body {
-	background-color :#f5f5f5;
-  padding: 20px 50px;
-  background: url('images/groceries.jpg') repeat;
+header {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+  margin: auto;
 }
 
 h1 {
-  margin: 0 20%;
-  color: #cd0000;
-  font-size: 42px;
-  letter-spacing: -2px;
-  text-align: center;
+  font-size: 24pt;
+  font-family: 'Brandon Grotesque Black';
+  text-transform: uppercase;
 }
 
 #container {
@@ -72,26 +75,30 @@ h1 {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-input[type="text"] {
-    width: 70%;
-    height: 25px;
-    margin: 25px auto;
-    padding-right: 50px;
+#add {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 15px;
+  color: #000;
+  display: inline-block;
+  font-size: 12pt;
+  height: 30px;
+  line-height: 24pt;
+  margin: 15px auto;
+  padding: 0 15px;
+  text-align: center;
+  width: 70%;
 }
 
-input[type="button"] {
-    margin-left: -55px;
-    height: 30px;
-    width: 50px;
-    background: blue;
-    color: white;
-    border: 0;
-    -webkit-appearance: none;
+
+h2 {
+  margin: 5px;
+  text-align: center;
 }
 
 .shopList-form {
 	margin: 20px 0 5px 0;
-	height: 80px;
+	height: 40px;
 	font-size: 13px;
 }
 
@@ -183,4 +190,10 @@ input[type="button"] {
   right: 10px;
 }
 
-.delete_item:before { content: "\2718";}
+hr {
+  margin: 1px;
+}
+
+.delete_item:before {
+  content: "\2718";
+}
