@@ -1,11 +1,14 @@
 $(document).ready(function() {
-/* Get user input */
- getItem();
+	/* Get user input */
+	getItem();
 
 	function getItem(){
     $('input#add').keydown(function(event){
         if(event.keyCode==13){
-            addItem();
+        	var val = $('#add').val();
+        	if (val){ //Add only if we have a value
+        		addItem();
+        	}
         }
     });
   }

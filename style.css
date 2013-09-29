@@ -64,6 +64,13 @@ h1 {
   font-size: 24pt;
   font-family: 'Brandon Grotesque Black';
   text-transform: uppercase;
+  color: #FF2100;
+}
+
+h2 {
+  font-size: 16pt;
+  font-family: 'Brandon Grotesque Black';
+  color: #0B8E00;
 }
 
 #container {
