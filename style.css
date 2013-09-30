@@ -48,6 +48,9 @@ table {
 }
 
 /*---------------------- My Style ----------------------*/
+* {
+  font-family: 'Brandon Grotesque Black';
+}
 body {
     background: url('./images/groceries.jpg');
     background-size: 1440px 800px;
@@ -71,6 +74,15 @@ h2 {
   font-size: 16pt;
   font-family: 'Brandon Grotesque Black';
   color: #0B8E00;
+}
+
+.dashed {
+  margin: 0 25%;
+  padding: 5px 0;
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+  color: #150CEC;
 }
 
 #container {
