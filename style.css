@@ -58,8 +58,8 @@ body {
 }
 
 header {
-  background-color: #f5f5f5;
-  padding: 30px 0;
+  background-color: rgba(207, 198, 198, 0.4);
+  padding: 15px 0;
   margin: auto;
 }
 
@@ -87,9 +87,9 @@ h2 {
 
 #container {
 	height: 100%;
-	margin: 0 20%;
+	margin: 0 30%;
 	text-align: center;
-	background: white;
+	background: rgba(255, 255, 255, 0.5);
 	box-shadow: 4px 0 4px #293a41, -4px 0 4px #293a41;
 	font-family: Verdana, Geneva, sans-serif;
 }
@@ -107,7 +107,7 @@ h2 {
   margin: 15px auto;
   padding: 0 15px;
   text-align: center;
-  width: 70%;
+  width: 55%;
 }
 
 
@@ -193,6 +193,7 @@ h2 {
 
 .item {
 	font-size: 15px;
+	color: #000;
 	margin: 8px 0 0 20px;
 	word-wrap: break-word;
 }
