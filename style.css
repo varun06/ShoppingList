@@ -95,10 +95,11 @@ h2 {
 }
 
 #add {
-  background-color: #f1f1f1;
+  background-color: #000;
   border: none;
   border-radius: 15px;
-  color: #000;
+  outline: none;
+  color: #fff;
   display: inline-block;
   font-size: 12pt;
   height: 30px;
