@@ -39,7 +39,7 @@ $(document).ready(function() {
 	// Remove list item when button is clicked
 	function removeItem(){
 		$('.delete_item').on('click', function(){
-			$(this).closest('li').slideUp('slow');
+			$(this).closest('li').fadeOut('fast');
 		});
 	}
 }); // end here
