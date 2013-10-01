@@ -22,7 +22,7 @@ $(document).ready(function() {
 		}
 
 		$('li#base').clone(true).appendTo('#item_list').removeAttr('id').removeClass('hidden');
-		$('ul#item_list>li:last>form>span').text($('input#add').val());
+		$('ul#item_list>li:last>span').text($('input#add').val());
 		$('input#add').val(""); //set the text field to blank
 		addDeleteButton(); //Call addDeleteButton
 	}
@@ -39,11 +39,7 @@ $(document).ready(function() {
 	// Remove list item when button is clicked
 	function removeItem(){
 		$('.delete_item').on('click', function(){
-			$('ul#item_list li').each(function(){
-				if($(this).find('.item').hasClass('strike')){
-					$(this).remove();
-				}
-			});
+			$(this).closest('li').slideUp('slow');
 		});
 	}
 }); // end here

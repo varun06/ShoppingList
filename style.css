@@ -1,3 +1,6 @@
+/*Import font*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -49,12 +52,11 @@ table {
 
 /*---------------------- My Style ----------------------*/
 * {
-  font-family: 'Brandon Grotesque Black';
+  font-family: 'Roboto Slab', serif;
 }
 body {
-    background: url('./images/groceries.jpg');
-    background-size: 1440px 800px;
-    padding: 20px 30px;
+  color: #f5f5f5;
+  padding: 10px 0;
 }
 
 header {
@@ -65,15 +67,13 @@ header {
 
 h1 {
   font-size: 24pt;
-  font-family: 'Brandon Grotesque Black';
   text-transform: uppercase;
-  color: #FF2100;
+  color: #3B3B3B;
 }
 
 h2 {
   font-size: 16pt;
-  font-family: 'Brandon Grotesque Black';
-  color: #0B8E00;
+  color: #3B3B3B;
 }
 
 .dashed {
@@ -82,24 +82,25 @@ h2 {
   width: 50%;
   text-align: center;
   font-style: italic;
-  color: #150CEC;
+  color: #3B3B3B;
 }
 
 #container {
 	height: 100%;
 	margin: 0 30%;
 	text-align: center;
-	background: rgba(255, 255, 255, 0.5);
-	box-shadow: 4px 0 4px #293a41, -4px 0 4px #293a41;
+	background: rgba(255, 255, 255, 0.9);
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 	font-family: Verdana, Geneva, sans-serif;
 }
 
 #add {
-  background-color: #000;
+  background-color: #C5C1C1;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   outline: none;
-  color: #fff;
+  color: #0C0C0C;
   display: inline-block;
   font-size: 12pt;
   height: 30px;
@@ -108,8 +109,9 @@ h2 {
   padding: 0 15px;
   text-align: center;
   width: 55%;
+  -webkit-box-shadow: 1px 0px 5px 1px rgba(20, 182, 52, 0.5);
+  box-shadow: 1px 0px 5px 1px rgba(20, 182, 52, 0.5);
 }
-
 
 h2 {
   margin: 5px;
@@ -217,4 +219,31 @@ hr {
 
 .delete_item:before {
   content: "\2718";
+}
+
+/*FOOTER SETTINGS*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    background: #8a8a8a;
+}
+    #links_container {
+    font-weight: 600;
+    text-align: Center;
+    padding: 10px 20px;
+    border-top: 1px solid #FA0340;
+}
+    #links_container a {
+    text-decoration: none;
+    color: #fafafa;
+    margin-left: 10px;
+}
+    #links_container a:visited {
+    color: #aa17bd;
+}
+    #links_container a:hover {
+    color: #112090;
 }
