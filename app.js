@@ -1,12 +1,13 @@
 $(document).ready(function() {
+  getItem();
 
-	getItem();
 
 	/* Get user input and call addItem function*/
 	function getItem(){
-    $('input#add').keydown(function(event){
+    var add = "#add";
+    $(add).keydown(function(event){
         if(event.keyCode==13){
-        	var val = $.trim($('#add').val());
+        	var val = $.trim($(add).val());
         	if (val){ //Add only if we have a value
         		addItem();
         	}
@@ -16,10 +17,12 @@ $(document).ready(function() {
 
   // This function add the items to list
 	function addItem(){
+		var color = ["#b00b00", "#de1e7e", "#e1e100", "#BADA55", "#F0FEAF", "#ac1d1c", "#facade", "#c0ffee", "#defec8", "#deface", "#a55"];
 
 		$('li#base').clone(true).appendTo('#item_list').removeAttr('id').removeClass('hidden');
-		$('ul#item_list>li:last>span').text($('input#add').val());
-		$('input#add').val(""); //set the text field to blank
+		$('ul#item_list>li:last>span').text($(add).val());
+		$('ul#item_list>li:last').css('background', color[Math.round((Math.random()) * 10)]);
+		$(add).val(""); //set the text field to blank
 		addDeleteButton(); //Call addDeleteButton
 	}
 
@@ -35,7 +38,7 @@ $(document).ready(function() {
 	// Remove list item when button is clicked
 	function removeItem(){
 		$('.delete_item').on('click', function(){
-			$(this).closest('li').fadeOut('fast');
+			$(this).closest('li').fadeOut('slow');
 		});
 	}
 }); // end here
