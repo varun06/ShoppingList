@@ -6,7 +6,7 @@ $(document).ready(function() {
 	function getItem(){
     $('input#add').keydown(function(event){
         if(event.keyCode==13){
-        	var val = $('#add').val();
+        	var val = $.trim($('#add').val());
         	if (val){ //Add only if we have a value
         		addItem();
         	}
@@ -16,10 +16,6 @@ $(document).ready(function() {
 
   // This function add the items to list
 	function addItem(){
-
-		if(!$.trim($('#add').val())){
-			$('input#add').val('Item');
-		}
 
 		$('li#base').clone(true).appendTo('#item_list').removeAttr('id').removeClass('hidden');
 		$('ul#item_list>li:last>span').text($('input#add').val());

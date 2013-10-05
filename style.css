@@ -86,13 +86,13 @@ h2 {
 }
 
 #container {
-	height: 100%;
-	margin: 0 30%;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.9);
-	-webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  margin: 0 30%;
+  min-width: 350px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-	font-family: Verdana, Geneva, sans-serif;
 }
 
 #add {
@@ -109,8 +109,8 @@ h2 {
   padding: 0 15px;
   text-align: center;
   width: 55%;
-  -webkit-box-shadow: 1px 0px 5px 1px rgba(20, 182, 52, 0.5);
-  box-shadow: 1px 0px 5px 1px rgba(20, 182, 52, 0.5);
+  -webkit-box-shadow: 1px 0px 5px 1px rgba(138, 31, 82, 0.5);
+  box-shadow: 1px 0px 5px 1px rgba(136, 26, 79, 0.5);
 }
 
 h2 {
@@ -119,30 +119,30 @@ h2 {
 }
 
 .shopList-form {
-	margin: 20px 0 5px 0;
-	height: 40px;
-	font-size: 13px;
+  margin: 20px 0 5px 0;
+  height: 40px;
+  font-size: 13px;
 }
 
 #remove-item {
-	display: inline-block;
-	margin: 5px;
+  display: inline-block;
+  margin: 5px;
 }
 
 .form-btn {
-	margin: 5px;
-	padding: 3px;
-	height: 25px;
-	width: 150px;
+  margin: 5px;
+  padding: 3px;
+  height: 25px;
+  width: 150px;
 }
 
 #container>h3 {
-	text-decoration: underline;
-	font-weight: normal;
+  text-decoration: underline;
+  font-weight: normal;
 }
 
 #item_list {
-	color: #555;
+  color: #555;
   font-size: 22px;
   padding: 0 !important;
   font-family: courier, monospace;
@@ -152,13 +152,14 @@ h2 {
 }
 
 #item_list li {
-	list-style: none;
+  list-style: none;
   border-bottom: 1px dotted #ccc;
-  overflow: hidden;
-  white-space: nowrap;
+  xxoverflow: hidden;
+  xxwhite-space: nowrap;
   text-overflow: ellipsis;
   padding: 10px 5px 10px 50px;
   text-transform: capitalize;
+  xxword-wrap: break-word;
 }
 
 #item_list li:hover {
@@ -185,32 +186,36 @@ h2 {
 }
 
 .check {
-	margin: 8px;
+  margin: 8px;
 }
 
-.check, .item {
+.check {
   float: left;
   margin-left: -30px;
 }
 
 .item {
-	font-size: 15px;
-	color: #000;
-	margin: 8px 0 0 20px;
-	word-wrap: break-word;
+  font-size: 15px;
+  width: 80%;
+  color: #000;
+  margin: 8px 20px 0 5px;
+  padding-right: 5px;
+  word-break: break-all;
+  display: inline-block;
+  text-align: left;
 }
 
 .strike {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 .delete_item {
   position: absolute;
-  right: 10px;
+  right: 4px;
 }
 
 hr {
@@ -219,31 +224,4 @@ hr {
 
 .delete_item:before {
   content: "\2718";
-}
-
-/*FOOTER SETTINGS*/
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 36px;
-    background: #8a8a8a;
-}
-    #links_container {
-    font-weight: 600;
-    text-align: Center;
-    padding: 10px 20px;
-    border-top: 1px solid #FA0340;
-}
-    #links_container a {
-    text-decoration: none;
-    color: #fafafa;
-    margin-left: 10px;
-}
-    #links_container a:visited {
-    color: #aa17bd;
-}
-    #links_container a:hover {
-    color: #112090;
 }
